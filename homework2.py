@@ -184,3 +184,53 @@ else:
         print("No")
         
   
+ № 70
+a = int(input())
+x = 1
+
+while a != 0:
+    c = a % 10
+    a //= 10 
+    x *= c                      
+                     
+if x > 200:        
+       y=0                 
+       print (y)         
+       
+else:
+       y=1
+       print(y)
+
+
+
+ № 151
+n = int(input())
+sum = 0
+
+for i in range(1,n+1,1):
+   if n % i == 0:
+      sum += i
+     
+  
+print(sum)    
+
+
+
+ № 155
+
+sum=0
+
+for i in range(10,100):
+    if i % 3 ==0:
+       sum+=i
+print (sum)
+       
+
+
+
+
+
+
+
+       
+
