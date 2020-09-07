@@ -226,6 +226,97 @@ for i in range(10,100):
 print (sum)
        
 
+№ 157
+sum = 1
+
+for i in range(100,1000):
+    if i % 5 != 0:
+       sum *= i
+print(sum)             
+
+
+№159
+sum = 1
+
+for i in range(1,10):
+       if i % 3 == 1 and i % 4 ==2:
+              sum *= i
+print(sum)
+
+
+
+№ 160
+import math
+tmp = 0
+for i in range(100,1000,1):
+       tmp = int(math.sqrt(i * 16))  # 101*16 1616    40,12
+       if tmp ** 2 == i * 16:        # 1600 == 1616
+           print(i)
+           break
+                   
+
+№ 161
+import math
+tmp = 0
+
+for i in range (1000,10000,1):
+       tmp = int(math.sqrt(i * 26))
+       if tmp ** 2 == i * 26:
+              print(i)
+              break
+
+
+№ 162
+import math
+tmp = 0
+
+for i in range (10000,1000,-2):
+       tmp = int(math.sqrt(i * 26))
+       if tmp ** 2 == i * 14:
+              print(i)
+              break
+
+
+№ 165
+n = int(input())
+z = n // 4
+while n != 1 : 
+       if x // 3 % 2 != 0:
+            print("True")
+
+       else:
+            print ("False")
+                    
+
+
+№ 167
+x = int (input())
+for i in range(1,30,1):
+     if x ** i < 0:
+          print("True")
+          exit (0)
+
+print("False")
+
+
+
+№ 168
+n = int(input())
+flag = 1
+min_simple = 2
+s = 0
+
+while min_simple <= n/2 and flag == 1:
+
+     if n % min_simple == 0:
+          flag = 0
+     else:
+          min_simple += 1
+
+if flag:
+     print("Parz")
+else:
+     print("Che")
 
 
 
