@@ -269,6 +269,17 @@ if flag:
 else:
      print("Che")
 
+        
+№171
+def fact(n):
+    a = 1
+    for i in range(2,n + 1):
+       a *= i
+    return a
+n = int(input())
+print (fact(n))
+
+
 
 № 181
 
