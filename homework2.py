@@ -270,7 +270,7 @@ else:
      print("Che")
 
         
-№171
+№ 171
 def fact(n):
     a = 1
     for i in range(2,n + 1):
@@ -295,12 +295,22 @@ print(count)
 
 № 182 
 
+№1
 n = int(input())
 max = 0
 for i in range (1, n // 2 ):
     if i ** 2 < n:
         max = i
-print (max)
+print (max) 
+
+
+№2
+def square(n):
+    for i in range(1,n//2):  
+        if i ** 2 > n:
+            return i - 1
+n = int(input())
+print(square(n))
 
 
 № 183
