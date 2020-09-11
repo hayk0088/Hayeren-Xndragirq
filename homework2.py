@@ -356,7 +356,7 @@ print(vazq(p))
 
 
 
-№187
+№ 187
 n = int(input("Input your favourite number: "))
 def is_prime(n):
     for i in range(2,n//2):
@@ -380,22 +380,31 @@ def number(n):
 print(str(number(n)) + (" nish uni ") + str(n) + (" tivy:"))
 
 
+№ 206
+n = int(input("Input your favourite number: "))
+def new_num(n):    
+    num = 0
+    while n > 0:
+        a = n % 10
+        num = num * 10 + a
+        n //= 10
+    return num
+print("New number is: " + str(new_num(n)))
+
+
 
 № 209
 n = int(input("Input your number: "))
-
 def num(n):
     while n > 0: 
-        a = n % 2
-        if a == 0:
-            n //= 10   
-        else:
-            return "False"
-    return "True"
+        if n % 2 != 0:
+            return True    
+        n //= 10 
+    return False
 print(num(n))
-    
 
-       
+
+
 
 
        
