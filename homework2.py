@@ -405,6 +405,24 @@ print(num(n))
 
 
 
+№210
+n = int(input("Input your favourite number Areg: "))
+def gumar(n):
+    a = b = 0
+    count_1 = count_2 = 0
+    n = abs(n)
+    while n > 0:
+        a = n % 10 
+        b = n // 10 % 10  
+        count_1 += a
+        count_2 += b 
+        n //= 100
+    if count_1 == count_2:
+        return True
+    else:
+        return False 
+print(gumar(n))
+
 
 
        
