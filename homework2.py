@@ -365,6 +365,21 @@ def is_prime(n):
     return "Num is prime:"
 print (is_prime(n))
 
+
+
+
+№ 201
+n = int(input("Write a number: "))
+def number(n):
+    a = 0
+    while n > 0:  
+        if n % 10 != 0:  
+            a += 1       
+        n = n // 10   
+    return a
+print(str(number(n)) + (" nish uni ") + str(n) + (" tivy:"))
+    
+
        
 
 
