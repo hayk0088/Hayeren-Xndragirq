@@ -281,9 +281,7 @@ print (fact(n))
 
 
 
-№ 181
-
-    
+№ 181  
 n= int(input())     
 count = 0              
 while n > 1:          
@@ -313,8 +311,9 @@ n = int(input())
 print(square(n))
 
 
-№ 183
 
+
+№ 183
 n = int(input())                     
 half = n // 2 + 1                 
 while n > 1:                           
@@ -324,18 +323,47 @@ while n > 1:
             exit(0)
 
 
+            
 № 185
-a = int(input("Mutqagreq vand drvox gumri chapy: "))
-n = 1
+a = int(input("Mutqagreq 1-25 voreve tiv: "))
+def avand(a):
+    count = 0
+    n = 1
+    gumar = 30000
+    while 1 < a < 25:         
+        gumar = gumar * ((100 + a) / 100)      
+        n += 1     
+        count += gumar                     
+        if gumar > 100000:            
+            return n, count                  
+print (avand(a))
 
-for i in range (1,25):         
-    end = n * i * a        
-    n += 1                          
-    while end > 1000000:            
-        print (n)                  
-        print(n * n * a *((100 + n) // 100))             
-        exit(0)  
-    
+
+
+№ 186
+p = int(input("Nermuceq 1-50 voreve tiv: "))
+def vazq(p):
+    or_1 = 20
+    or_ = 1
+    count = 20
+    while p > 0:  
+        or_1  = or_1 * (100 + p) / 100    
+        count += or_1            
+        or_ += 1                          
+        if  or_1 > 80:
+            return or_ , int(count)
+print(vazq(p))
+
+
+
+№187
+n = int(input("Input your favourite number: "))
+def is_prime(n):
+    for i in range(2,n//2):
+        if n % i == 0:
+            return "Num is not prime:"
+    return "Num is prime:"
+print (is_prime(n))
 
        
 
