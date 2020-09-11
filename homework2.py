@@ -378,6 +378,21 @@ def number(n):
         n = n // 10   
     return a
 print(str(number(n)) + (" nish uni ") + str(n) + (" tivy:"))
+
+
+
+№ 209
+n = int(input("Input your number: "))
+
+def num(n):
+    while n > 0: 
+        a = n % 2
+        if a == 0:
+            n //= 10   
+        else:
+            return "False"
+    return "True"
+print(num(n))
     
 
        
