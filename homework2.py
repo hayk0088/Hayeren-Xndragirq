@@ -425,7 +425,27 @@ print(gumar(n))
 
 
 
-       
+
+№211
+def creating_massiv(len):
+    numbers = [len]
+    for i in range(0,len):
+        n = int(input("Write your numbers: "))
+        numbers.append(n)
+    return numbers
+
+def michin_tiv(numbers):
+    count = 0
+    n = 0
+    for i in numbers:
+        if i > 0:
+            count += i
+            n += 1
+    return count / n 
+
+len = int(input("Write the len of numbers: "))
+
+print(michin_tiv(creating_massiv(len)))
 
 
 
