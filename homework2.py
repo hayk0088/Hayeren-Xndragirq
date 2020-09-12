@@ -405,7 +405,7 @@ print(num(n))
 
 
 
-№210
+№ 210
 n = int(input("Input your favourite number Areg: "))
 def gumar(n):
     a = b = 0
@@ -426,17 +426,16 @@ print(gumar(n))
 
 
 
-№211
-def creating_massiv(len):
+№ 211
+def creating_massiv(len):             
     numbers = []
-    for i in range(0,len):
+    for i in range(0,len):  
         n = int(input("Write your number: "))
         numbers.append(n)
     return numbers
 
 def michin_tiv(numbers):
     count = 0
-    n = 0
     for i in numbers:
         if i > 0:
             count += i
