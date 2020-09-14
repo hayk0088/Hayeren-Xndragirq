@@ -448,6 +448,70 @@ print(michin_tiv(creating_massiv(len)))
 
 
 
+№ 214
+
+def creating_massiv(len):             
+    numbers = []
+    for i in range(0,len):  
+        n = int(input("Write your number: "))
+        numbers.append(n)
+    return numbers
+
+def michin_tiv(numbers):
+    count = 0
+    sum = 0
+    for i in numbers:
+        if i < 0:
+            sum += i
+            count += 1
+    return sum / count
+
+len = int(input("Write the len of numbers: "))
+print(michin_tiv(creating_massiv(len)))
+
+
+№ 215
+
+def creating_massiv(len):             
+    numbers = []
+    for i in range(0,len):  
+        n = int(input("Write your number: "))
+        numbers.append(n)
+    return numbers
+
+def sum(numbers):
+    count = 0
+    for i in range(0,len,2):
+            count += numbers[i]
+    return count 
+
+
+len = int(input("Write the len of numbers: "))
+print(sum(creating_massiv(len)))
+
+
+
+№ 251
+
+
+def creating_massiv(len):             
+    numbers = []
+    for i in range(0,len):  
+        n = int(input("Write your number: "))
+        numbers.append(n)
+    return numbers
+
+def max_num(numbers):
+    max = 0
+    for x in numbers:
+      if x > max:
+        max = x
+    return max
+len = int(input("Write your favourite number: "))
+print(max_num(creating_massiv(len)))
+
+
+
 
 
        
